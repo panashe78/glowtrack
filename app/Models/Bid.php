@@ -21,8 +21,8 @@ class Bid extends Model
     {
         return $this->belongsTo(Testimonial::class);
     }
-     public function bid()
+     public function user()
     {
-        return $this->belongsTo(Bid::class);
+        return $this->belongsto(user::class);
     }
 }
