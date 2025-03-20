@@ -1,5 +1,5 @@
 <x-layout>
-    <section class=" bg-blue-950 dark:bg-gray-900 bg-center bg-cover pt-40" style="background-image: url(images/fereri.png)">
+    <section class="panashe bg-blue-950 dark:bg-gray-900 bg-center bg-cover pt-40" style="background-image: url(images/fereri.png)">
         <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
            
         <h1 class='text-xl h-20 md:text-6xl text-blue-800 font-serif font-extrabold'>WELCOME TO GLOW TRACK AUCTIONS</h1>
@@ -99,6 +99,13 @@
                             </div>
                             </div>
                              </div>
+                             <br>
+                             <br>
+                             <br>
+                             <br>
+                             <br>
+                             <br>
+                             <br>
                           
                         </div>
                   </div>
@@ -144,7 +151,7 @@
                 </div> 
                 <div class="grid grid-cols-1 ml-2 md:w-2/3 md:mx-auto lg:w-1/4">
                   
-               <button type="button" class="mt-2 focus:outline-none text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-900"> <a href="/auction">VIEW UPCOMING AUCTIONS</a></button>
+               <button type="button" class="mt-2 focus:outline-none text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-900"> <a href="/auctions">VIEW UPCOMING AUCTIONS</a></button>
               <button type="button" class="mt-2 focus:outline-none text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-900"> <a href="/about">VIEW MORE ABOUT US</a></button>
                 </div>
 
@@ -243,7 +250,8 @@
     </div>
     <div class="grid grid-cols-1 ml-2 md:mx-auto md:w-1/4">
                   
-        <button type="button" class="mt-2 focus:outline-none text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-900 my-10">SHOW MORE</button>
+                             <br>
+        <button type="button" class="mt-2 focus:outline-none text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-900 my-10"><a href="/auctions"> SHOW MORE</a></button>
         </div>
     <script>
     
@@ -315,7 +323,7 @@
                 <p class="my-4">{{ $testimonials->testimonial }}</p>
             </blockquote>
             <figcaption class="flex items-center justify-center ">
-                <img class="rounded-full w-9 h-9" src="/storage/{{ $testimonials->user->cover_photo }}" alt="profile picture" style="object-fit: cover;">
+                <img class="rounded-full w-9 h-9" src="/storage/{{ $testimonials->user->profile_photo }}" alt="profile picture" style="object-fit: cover;">
                 <div class="space-y-0.5 font-medium dark:text-white text-left rtl:text-right ms-3">
                     <div>{{ $testimonials->User->name }}</div>
                     <div class="text-sm text-gray-500 dark:text-gray-400 ">{{ $testimonials->User->email }}</div>
@@ -333,46 +341,7 @@
         <button type="button" class="mt-2 focus:outline-none text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-900 my-10">SHOW MORE</button>
         </div>
     </div>
-    <div class="fixed bottom-4 left-4">
-        <button type="button" class="flex items-center justify-center focus:outline-none text-white bg-indigo-600 hover:bg-indigo-700 focus:ring-4 focus:ring-indigo-300 font-medium rounded-full text-sm p-3 dark:bg-indigo-600 dark:hover:bg-indigo-700 dark:focus:ring-indigo-900 transition duration-300 ease-in-out transform hover:scale-105">
-            <a href="/register" class="flex items-center">
-                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
-                </svg>
-                Sign Up
-            </a>
-        </button>
-    </div>
-    <div class="fixed bottom-4 left-36">
-        <button type="button" class="flex items-center justify-center focus:outline-none text-white bg-purple-600 hover:bg-purple-700 focus:ring-4 focus:ring-purple-300 font-medium rounded-full text-sm p-3 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900 transition duration-300 ease-in-out transform hover:scale-105">
-            <a href="/auctions" class="flex items-center">
-                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M13 10V3a1 1 0 00-1-1h-1a1 1 0 00-1 1v7h4zm6 0V3a1 1 0 00-1-1h-1a1 1 0 00-1 1v7h4zm-9 0V3a1 1 0 00-1-1H8a1 1 0 00-1 1v7h4zm12 2H3a1 1 0 00-1 1v8a1 1 0 001 1h18a1 1 0 001-1v-8a1 1 0 00-1-1z"/>
-                </svg>
-                Bidding
-            </a>
-        </button>
-    </div>
+    
 
-    <div class="fixed bottom-20 left-4">
-        <button type="button" class="flex items-center justify-center focus:outline-none text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm p-3 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-900 transition duration-300 ease-in-out transform hover:scale-105">
-            <a href="https://www.facebook.com/profile.php?id=100039214670751" class="flex items-center">
-                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047v-2.642c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.234 2.686.234v2.953h-1.514c-1.491 0-1.956.926-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-                </svg>
-                Facebook
-            </a>
-        </button>
-    </div>
-
-    <div class="fixed bottom-20 left-36">
-        <button type="button" class="flex items-center justify-center focus:outline-none text-white bg-green-600 hover:bg-green-700 focus:ring-4 focus:ring-green-300 font-medium rounded-full text-sm p-3 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-900 transition duration-300 ease-in-out transform hover:scale-105">
-            <a href="https://wa.me/263772582201" class="flex items-center">
-                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M17.507 14.307l-.009.075c-.213 1.141-1.159 2.098-2.301 2.309l-.075.009c-.178.023-.357.035-.536.035-2.661 0-4.83-2.168-4.83-4.83 0-2.661 2.168-4.83 4.83-4.83 2.661 0 4.83 2.168 4.83 4.83 0 .179-.012.358-.035.536l-.009.075c-.211 1.142-1.168 2.088-2.309 2.301zM12 0C5.373 0 0 5.373 0 12c0 2.572.693 4.98 1.898 7.053L.066 23.315c-.088.38.032.78.308 1.056.276.276.676.396 1.056.308l4.262-1.832A11.917 11.917 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/>
-                </svg>
-                WhatsApp
-            </a>
-        </button>
-    </div>
+   
 </x-layout>
