@@ -31,7 +31,7 @@ return [
             'transport' => 'smtp',
             'scheme' => env('MAIL_SCHEME'),
             'url' => env('MAIL_URL'),
-            'host' => env('MAIL_HOST', 'smtp.example.com'), // Update with your SMTP server
+            'host' => env('MAIL_HOST', 'smtp.gmail.com'), // Update with your SMTP server
             'port' => env('MAIL_PORT', 587), // Common SMTP port
             'username' => env('MAIL_USERNAME'), // SMTP username
             'password' => env('MAIL_PASSWORD'), // SMTP password
@@ -55,8 +55,8 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'hello@example.com'),
-        'name' => env('MAIL_FROM_NAME', 'Example'),
+        'address' => env('MAIL_FROM_ADDRESS', 'glowtrack@gmail.com'),
+        'name' => env('MAIL_FROM_NAME', 'Glowtrack'),
     ],
 
 ];
