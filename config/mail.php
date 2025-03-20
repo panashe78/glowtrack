@@ -43,7 +43,7 @@ return [
             'port' => env('MAIL_PORT', 587), // Recommended SMTP port
             'from' => [
                 'address' => env('MAIL_FROM_ADDRESS', 'panashemwamadi78@gmail.com'),
-                'name' => env('MAIL_FROM_NAME', 'Noticeboard'),
+                'name' => env('MAIL_FROM_NAME', 'Glowtrack'),
             ],
             'username' => 'panashemwamadi78@gmail.com',
             'password' => 'lkqvfzxrehgvikhs',
@@ -69,7 +69,7 @@ return [
 
     'from' => [
         'address' => env('MAIL_FROM_ADDRESS', 'panashemwamadi78@gmail.com'),
-        'name' => env('MAIL_FROM_NAME', 'Noticeboard'),
+        'name' => env('MAIL_FROM_NAME', 'Glowtrack'),
     ],
 
 ];
