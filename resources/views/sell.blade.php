@@ -30,53 +30,45 @@
     <a href="#">
         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white text-center py-10">What are you wanting to buy?</h5>
     </a>
-    <p class="mb-3 font-normal text-gray-500 dark:text-gray-400 md:px-24">We understand that auctions can be quite da
-        unting for first time attendees however we have taken every measure possible to make the process as easy and enjoya
-        ble as possible. Any one of our members of staff will gladly walk you through the process or al
-        ternatively you can simply follow the step by step guide detailed below.</p>
+    <p class="mb-3 font-normal text-gray-500 dark:text-gray-400 md:px-24">
+        We understand that auctions can be quite daunting for first-time attendees; however, we have taken every measure possible to make the process as easy and enjoyable as possible. Our knowledgeable staff is here to assist you every step of the way, or you can simply follow the step-by-step guide detailed below.
+    </p>
     
-        <div class="md:flex">
-            <ul class="flex flex-col space-y-4 text-sm font-medium text-gray-500 dark:text-gray-400 md:me-4 mb-4 md:mb-0">
-                <li>
-                    <a href="#" class="tab-link inline-flex items-center px-4 py-3 text-white bg-blue-900 rounded-lg active w-full dark:bg-blue-900" data-tab="profile" aria-current="page">
-                        BUY
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="tab-link inline-flex items-center px-4 py-3 rounded-lg hover:bg-gray-100 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white" data-tab="dashboard">
-                        SELL
-                    </a>
-                </li>
-               
-                <li>
-                    <a href="#" class="tab-link inline-flex items-center px-4 py-3 rounded-lg hover:bg-gray-100 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white" data-tab="contact">
-                        Contact
-                    </a>
-                </li>
-                
-            </ul>
-            <div class="tab-content p-6 bg-gray-50 text-medium text-gray-500 dark:text-gray-400 dark:bg-gray-800 rounded-lg w-full justify-items-center h-48">
-                <div id="profile" class="tab-item">
-                    <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">BUYING</h3>
-                    <p class="mb-2">This is some placeholder content for the Buying tab.</p>
-                    <p>The tab JavaScript swaps classes to control the content visibility and styling.</p> 
-                </div>
-                <div id="dashboard" class="tab-item hidden">
-                    <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Dashboard Tab</h3>
-                    <p class="mb-2">This is some placeholder content for the Dashboard tab.</p>
-                </div>
-                <div id="settings" class="tab-item hidden">
-                    <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Settings Tab</h3>
-                    <p class="mb-2">This is some placeholder content for the Settings tab.</p>
-                </div>
-                <div id="contact" class="tab-item hidden">
-                    <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Contact Tab</h3>
-                    <p class="mb-2">This is some placeholder content for the Contact tab.</p>
-                </div>
+    <div class="md:flex">
+        <ul class="flex flex-col space-y-4 text-sm font-medium text-gray-500 dark:text-gray-400 md:me-4 mb-4 md:mb-0">
+            <li>
+                <a href="#" class="tab-link inline-flex items-center px-4 py-3 text-white bg-blue-900 rounded-lg active w-full dark:bg-blue-900" data-tab="profile" aria-current="page">
+                    BUY
+                </a>
+            </li>
+            <li>
+                <a href="#" class="tab-link inline-flex items-center px-4 py-3 rounded-lg hover:bg-gray-100 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white" data-tab="dashboard">
+                    SELL
+                </a>
+            </li>
+            <li>
+                <a href="#" class="tab-link inline-flex items-center px-4 py-3 rounded-lg hover:bg-gray-100 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white" data-tab="contact">
+                    Contact
+                </a>
+            </li>
+        </ul>
+        <div class="tab-content p-6 bg-gray-50 text-medium text-gray-500 dark:text-gray-400 dark:bg-gray-800 rounded-lg w-full justify-items-center h-48">
+            <div id="profile" class="tab-item">
+                <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">BUYING</h3>
+                <p class="mb-2">At Glotrack Auctions, our buying process is designed to be straightforward and transparent. We invite you to explore our catalog of items available for auction, ranging from antiques to modern collectibles.</p>
+                <p>Before the auction begins, you can attend our preview sessions to inspect items up close and ask questions. Our staff is available to provide insights and assist you in understanding the auction process. Remember to register online to receive your bidder's card, which is essential for participating in auctions.</p>
+            </div>
+            <div id="dashboard" class="tab-item hidden">
+                <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">SELLING</h3>
+                <p class="mb-2">As a seller, you can trust Glotrack Auctions to maximize the value of your items. Simply fill out our online seller registration form to start the process. Our experienced team will guide you through item preparation, valuation, and marketing strategies to attract potential buyers.</p>
+                <p>We offer various selling options, including live auctions and online bidding, ensuring that your items reach a wide audience. Our goal is to provide you with a seamless and rewarding selling experience.</p>
+            </div>
+            <div id="contact" class="tab-item hidden">
+                <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">CONTACT US</h3>
+                <p class="mb-2">If you have any questions or need assistance, our customer service team is here to help. You can reach us via phone, email, or through our website’s contact form. We value your feedback and are committed to ensuring your auction experience is exceptional.</p>
             </div>
         </div>
-        
-        <script>
+    </div>    <script>
             document.querySelectorAll('.tab-link').forEach(tab => {
                 tab.addEventListener('click', function(event) {
                     event.preventDefault();
